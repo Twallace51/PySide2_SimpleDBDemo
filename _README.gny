@@ -1,0 +1,39 @@
+Simple database demo for python/PySide2/SQLite projects
+-----------------------------------------------------
+
+This project demonstrates using PySide2 to manage a simple sqlite3 database,
+    using corresponding menu, list, form and search windows.
+
+Also allows printing of:
+     form windows (direct screen print)
+     filtered lists (with print preview)
+
+This demo depends on a number of generic support files in:.
+    "_support.py"
+
+To see demo,   use python3.8 and PySide2 to open  "_RUN_ME.py"
+
+Note:  The demo database 'test.db' is a simple sqlite3 database,  created with:
+    """
+    CREATE TABLE "table_1" (
+        "id"        INTEGER NOT NULL UNIQUE,
+        "text_1"    TEXT DEFAULT "",
+        "integer_1" INTEGER DEFAULT 0,
+        "real_1"    REAL DEFAULT 0.0,
+        "date_1"    TEXT DEFAULT '2020-03-14',
+        PRIMARY KEY("id")
+    );
+    """
+    Database also has representative data for editing, adding, deleting, filtering, printing   ....
+
+Final comments:
+    I wrote this demo because I found that the quickest way to learn is playing with working examples ...
+    Since I never found something like this on the Internet,  I wrote one for myself.
+    I also wrote this demo to be relatively easy to copy and adapt for more useful databases
+    and additional tables....
+
+
+
+Adapted by:   twallace51@gmail.com
+    Cochabamba,  Bolivia
+    using Linux Lubuntu, Python 3.8.2, PySide2 5.14.4,  geany 1.35   pylint3
